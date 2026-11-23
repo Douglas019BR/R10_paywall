@@ -10,6 +10,17 @@ but with one click.
 > login/authentication or decrypt DRM. Respect each site's Terms of Service and
 > support the publications you value. MIT license — provided "as is".
 
+![Before and after: a client-side paywalled article and the same page cleaned by R10 Paywall](docs/screenshots/comparison.png)
+
+<details>
+<summary>Toolbar popup</summary>
+
+![R10 Paywall toolbar popup](docs/screenshots/popup.png)
+
+</details>
+
+_Screenshots use a fictional demo article; the popup and cleaned page are the real extension._
+
 ## How it works
 
 Many sites are "soft-paywalled": the full article is present in the HTML, but a
