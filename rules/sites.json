@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Forbes",
+    "hostnames": ["*.forbes.com", "forbes.com"],
+    "userAgent": "curl/8.0",
+    "removeSelectors": [".paywall_ribbon", "[class*='paywall']"],
+    "keepSelectors": [".article-body", "article"]
+  },
+  {
+    "name": "Example (template — replace with a real site)",
+    "hostnames": ["*.example.com", "example.com"],
+    "removeSelectors": [".paywall", "#subscription-overlay", "[class*='paywall']"],
+    "keepSelectors": ["article", ".article-content"]
+  }
+]

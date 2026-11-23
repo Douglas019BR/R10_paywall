@@ -1,0 +1,13 @@
+{
+  "name": "r10-paywall",
+  "version": "0.1.0",
+  "description": "Browser extension that reads paywalled articles by fetching raw HTML and stripping the client-side paywall.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}
