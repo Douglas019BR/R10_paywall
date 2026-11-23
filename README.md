@@ -1,5 +1,9 @@
 # R10 Paywall
 
+[![test](https://github.com/Douglas019BR/R10_paywall/actions/workflows/test.yml/badge.svg)](https://github.com/Douglas019BR/R10_paywall/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/Douglas019BR/R10_paywall/releases/tag/v0.1.0)
+
 A browser extension (Manifest V3) that reads paywalled articles by fetching the
 raw HTML and stripping the **client-side** paywall — the same trick as running
 `curl <url> > page.html` in the terminal and opening the file in a live server,
@@ -75,6 +79,7 @@ you get the full article. The extension reproduces that:
 
 ## Contributing
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and pull request guidelines.
 The generic sanitizer already handles the common cases, but each site hides its
 content differently. The easiest way to help is adding a **site rule** in
 [`rules/sites.json`](rules/sites.json):
@@ -119,6 +124,10 @@ After editing code or rules, click **Reload** on the extension card in
 - [ ] Archive-based fallbacks (Google cache, archive.today) for hard paywalls.
 - [ ] "Reader mode" view using Firefox's Readability.
 - [ ] Firefox support (port to Manifest V2/V3 quirks).
+
+## Project links
+
+[Changelog](CHANGELOG.md) · [Security policy](SECURITY.md) · [Code of conduct](CODE_OF_CONDUCT.md)
 
 ## License
 

@@ -2,6 +2,15 @@
   "name": "r10-paywall",
   "version": "0.1.0",
   "description": "Browser extension that reads paywalled articles by fetching raw HTML and stripping the client-side paywall.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Douglas019BR/R10_paywall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Douglas019BR/R10_paywall/issues"
+  },
+  "homepage": "https://github.com/Douglas019BR/R10_paywall#readme",
   "private": true,
   "type": "module",
   "scripts": {

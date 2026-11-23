@@ -1,0 +1,40 @@
+name: Bug report
+description: Something in the extension does not work as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: site
+    attributes:
+      label: Site and article URL
+      description: Which page did you try to read?
+      placeholder: https://example.com/news/article
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 158 / Chromium 155
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+      description: Include the error message shown in the popup, if any.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots and the site's `rules/sites.json` entry are helpful.
+    validations:
+      required: false

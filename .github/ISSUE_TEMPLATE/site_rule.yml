@@ -1,0 +1,38 @@
+name: Site rule request
+description: Ask for support for a site with a client-side paywall
+title: "[Site] "
+labels: ["site-rule"]
+body:
+  - type: input
+    id: site
+    attributes:
+      label: Site and article URL
+      description: A public article URL where the paywall appears.
+      placeholder: https://example.com/news/article
+    validations:
+      required: true
+  - type: textarea
+    id: selectors
+    attributes:
+      label: Paywall selectors
+      description: CSS class/id of the paywall overlay or modal, from DevTools.
+      placeholder: .paywall-overlay, #subscription-modal
+    validations:
+      required: false
+  - type: textarea
+    id: article
+    attributes:
+      label: Article container selectors
+      description: CSS selectors for the element that holds the full article.
+      placeholder: article, .article-body
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: The full article text is present in the page's raw HTML (view-source or curl).
+          required: true
+        - label: This is a client-side paywall, not a login or a hard paywall.
+          required: true
